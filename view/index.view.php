@@ -1,5 +1,7 @@
 <?php
 use userApp\User;
-$user = new User;
-$user->name = "Rokas";
-    echo $user->name;
+$user = new User("Rokas", "rokascape@gmail.com", "moksleivis");
+
+    foreach ($user->showProfile()as $item){
+     echo $item . " ";
+    }
